@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>			
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=-1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+    <title>E-Voting in vrindavan</title>
+</head>
+<body>
+    <!-- CONTACT FORM-->
+	<div class="contact">
+
+			<h5>Register for E-Voting</h5>
+			<form class="form-inline" action="dbcon.php" method="POST" enctype="multipart/form-data">
+				<div class="container">
+			<div class="pdf"> 
+				<h6>Select the permission letter:</h6>
+				<input type="file" id="myfile" name="myfile" required></div>
+				<div class= "name">
+				<input id="name" type="name" name="name" class="sty1" placeholder=" " required>
+			<label for="name" class="f-1">ENTER NAME</label>
+		</div>
+			<div class="enroll">
+				<input id="enrollment" type="number" name="enrollment" class="sty2" placeholder=" " required>
+				<label for="email">Enrollment no.</label>
+			</div>
+				<div class ="party">
+				<input id="party" type="text" name="party" placeholder=" "  required>
+				<label for="contact">Party name</label>	
+			</div>
+				<div class="aadhar">
+				<input id="aadhar" type="number" name="aadhar" placeholder=" " required>
+				<label for="aadhar">Aadhar no.</label>	
+			</div>
+	
+			<button class="but" type="submit" name="submit">Register Here</button>
+		</div>
+			
+			</form>
+		</div>
+
+	</div>
+    
+</body>
+</html>	

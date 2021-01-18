@@ -2,15 +2,17 @@
 include 'dbcon.php';
 
 if(isset($_POST['submit'])){
-    $Name = $_POST['name'];
-    $Enroll = $_POST['enrollment'];
-    $Party = $_POST['party'];
-    $Aadhar = $_POST['aadhar'];
-    $image = $_FILES['image'];                       
+    $name = $_POST['name'];
+    $enrollment = $_POST['enrollment'];
+    $party = $_POST['party'];
+    $aadhar = $_POST['aadhar'];
+    $image = $_FILES['image'];       
+      
+    print_r($image);        
 }else{
     echo "no button is clicked";
 }
 
-print_r($image);
+// print_r($Image);
 
 ?>                                                               

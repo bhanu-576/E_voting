@@ -1,7 +1,7 @@
 <?php
 include 'dbcon.php';
 
-if(isset($_POST['submit'])){
+if(isset($_POST['name'])){
     $name = $_POST['name'];
     $enrollment = $_POST['enrollment'];
     $party = $_POST['party'];

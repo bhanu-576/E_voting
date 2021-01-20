@@ -3,16 +3,18 @@
 <head>			
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=-1.0">
-	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/global.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
     <title>E-Voting in vrindavan</title>
 </head>
 <body>
+	<div class="alert" id="alert"></div>
     <!-- CONTACT FORM-->
 	<div class="contact">
 
 			<h5>Register for E-Voting</h5>
-			<form class="form-inline" action="upload.php" method="POST" enctype="multipart/form-data">
+			<form class="form-inline" action="http://localhost/E%20voting/upload.php" method="POST" enctype="multipart/form-data">
 				<div class="container">
 			<div class="pdf"> 
 				<h6>Select the permission letter:</h6>
@@ -41,6 +43,7 @@
 		</div>
 
 	</div>
-    
+	
+	<script src="js/global.js"></script>
 </body>
 </html>	

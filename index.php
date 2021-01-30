@@ -3,8 +3,8 @@
 <head>			
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=-1.0">
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
     <title>E-Voting in vrindavan</title>
 </head>
@@ -14,36 +14,41 @@
 	<div class="contact">
 
 			<h5>Register for E-Voting</h5>
-			<form class="form-inline" action="http://localhost/E%20voting/upload.php" method="POST" enctype="multipart/form-data">
+			<form class="form-inline" id="form" enctype="multipart/form-data">
 				<div class="container">
 			<div class="pdf"> 
 				<h6>Select the permission letter:</h6>
-				<input type="file" id="myfile" name="image" required></div>
+				<input type="file" id="myfile" name="image" class="form-control" ></div>
 				<div class= "name">
-				<input id="name" type="name" name="name" class="sty1" placeholder=" " required>
+				<input id="name" type="name" name="name" class="sty1" placeholder=" " >
 			<label for="name" class="f-1">ENTER NAME</label>
 		</div>
 			<div class="enroll">
-				<input id="enrollment" type="number" name="enrollment" class="sty2" placeholder=" " required>
-				<label for="email">Enrollment no.</label>
+				<input type="enr" id="enrollm"  name="enrollment" class="sty2" placeholder=" " maxlength ="12" >
+				<label for="enroll">Enrollment no.</label>
 			</div>
 				<div class ="party">
-				<input id="party" type="text" name="party" placeholder=" "  required>
-				<label for="contact">Party name</label>	
+				<input id="part" type="text" name="party" placeholder=" "  >
+				<label for="party">Party name</label>	
 			</div>
 				<div class="aadhar">
-				<input id="aadhar" type="number" name="aadhar" placeholder=" " required>
+				<input id="aadh" type="tel" name="aadhar" placeholder=" " >
 				<label for="aadhar">Aadhar no.</label>	
 			</div>
 	
-			<button class="but" type="submit" name="submit" value="Register">Register Here</button>
+			<button class="but" id = "b-btn" type="submit" name="submit" value="Register">Register Here</button>
 		</div>
 			
 			</form>
 		</div>
 
 	</div>
-	
+	<!-- Footer -->
+    <footer class="footer">
+		&copy; <span id="copy-year"></span> E-Voting
+			<span class="float-right">&lt;/&gt; by Bhanu Sharma</span>
+	</footer>
 	<script src="js/global.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>	

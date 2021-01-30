@@ -1,3 +1,9 @@
+//DOM loaded callback
+document.addEventListener('DOMContentLoaded', ()=> {
+    //Dynamic copyright year
+    document.getElementById('copy-year').innerHTML = new Date().getFullYear();
+})
+
 // alert box
 
 const toast = (msg) =>{

@@ -20,7 +20,7 @@ body {
   background-image: url("../images/0.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  height: 39.5rem;
+  height: 35.5rem;
   color: #000;
   font: 14px Arial;
   margin: 0 auto;
@@ -141,8 +141,8 @@ form:after {
   z-index: -2;
 }
 #content form { margin: 0 20px; position: relative }
-#content form input[type="text"],
-#content form input[type="password"] {
+#content form input[type="enr"],
+#content form input[type="email"] {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -166,8 +166,8 @@ form:after {
   padding: 15px 10px 15px 40px;
   width: 80%;
 }
-#content form input[type="text"]:focus,
-#content form input[type="password"]:focus {
+#content form input[type="enr"]:focus,
+#content form input[type="email"]:focus {
   -webkit-box-shadow: 0 0 2px #ed1c24 inset;
   -moz-box-shadow: 0 0 2px #ed1c24 inset;
   -ms-box-shadow: 0 0 2px #ed1c24 inset;
@@ -177,8 +177,8 @@ form:after {
   border: 1px solid #ed1c24;
   outline: none;
 }
-#username { background-position: 10px 10px !important }
-#password { background-position: 10px -53px !important }
+#enrollment { background-position: 10px 10px !important }
+#email { background-position: 10px -53px !important }
 #content form input[type="submit"] {
   background: rgb(254,231,154);
   background: -moz-linear-gradient(top,  rgba(254,231,154,1) 0%, rgba(254,193,81,1) 100%);
@@ -260,4 +260,15 @@ form:after {
 .button a:hover {
   background-position: 0 -135px;
   color: #00aeef;
+}
+/*Footer*/
+.float-right{
+  float: right;
+}
+footer {
+  padding: 7px 5vw;
+  transform: translate(0,15.7rem);
+  color: #fff;
+  font-family: 'Segoe UI';
+  background-color: #007bff;
 }

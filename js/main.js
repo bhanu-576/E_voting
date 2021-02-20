@@ -1,4 +1,4 @@
-//login form
+//registration form 
 document.getElementById('form').addEventListener('submit',function(e){
     e.preventDefault();
     const name = document.getElementById('name').value;
@@ -38,7 +38,7 @@ document.getElementById('form').addEventListener('submit',function(e){
             .catch((error) => {
                 toast(error);
                  btn.disabled = false;
-                 btn.innerHTML = 'register';
+                 btn.innerHTML = 'register here';
         });
     }
 })

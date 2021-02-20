@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>			
+<head>		
+	<title>E-Voting in vrindavan</title>	
+	<meta name = "description" content = "E Voting - a simple way of Voting">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=-1.0">
 	<link rel="stylesheet" href="css/global.css">
@@ -9,6 +11,7 @@
     <title>E-Voting in vrindavan</title>
 </head>
 <body>
+	<!--Alert box-->
 	<div class="alert" id="alert"></div>
     <!-- CONTACT FORM-->
 	<div class="contact">
@@ -40,8 +43,9 @@
 		</div>
 			
 			</form>
+			<h6 class = "login">If you Want to vote click here for <a href = "login.php">Login</a></h6>
 		</div>
-
+	
 	</div>
 	<!-- Footer -->
     <footer class="footer">

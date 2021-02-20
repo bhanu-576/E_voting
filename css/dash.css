@@ -1,0 +1,197 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #050801;
+  }
+  
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  h1{
+    color: #fff;
+  } 
+  .log{
+    display: flex;
+    flex-direction: row;
+  justify-content: space-between;
+  }
+  .log button {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    margin : 20px 40px 0px 5px;
+    font-weight: bold;
+    background-color: tomato;
+    border: none;
+    height: 40px;
+  }
+  .new{
+    margin-top: 5rem;
+      justify-content: center;
+    display: flex;
+    flex-direction: row;
+    column-gap: 9em;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  .flip-card-inner1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  .flip-card-inner2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    float: right;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card:hover .flip-card-inner1 {
+    transform: rotateY(180deg);
+  }
+  .flip-card:hover .flip-card-inner2 {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  a{
+    position: relative;
+    display: inline-block;
+    padding: 30px 50px;
+    margin: 40px 40px;
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    overflow: hidden;
+    margin-right: 50px;
+}
+a:hover{
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4;
+               
+                -webkit-box-reflect: below 1px linear-gradient(transition, #0005)
+}
+
+/*add animation*/
+a:nth-child(2){
+    filter: hue-rotate(270deg);
+}
+a span {
+    position: absolute;
+    display: block;
+}
+a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: animate1 1s linear infinite;
+}
+
+/* add keyframes for animation */
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+       left : 100%
+    }
+}
+/* 2ns line animation */
+a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,tansparent,#03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+/* add keyframes */
+@keyframes animate2{
+0% {
+    top: -100%;
+}
+50%,100%{
+    top : 100%;
+}
+}
+
+/* 3rd line animation */
+a span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#03e9f4);
+    animation: animate3 1s linear infinite;
+}
+@keyframes animate3{
+    0% {
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+/* 4th line animation */
+a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#03e9f4);
+    animation: animate4 1s liner infinite;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
